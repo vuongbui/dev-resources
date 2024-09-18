@@ -140,7 +140,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        This is the place I note down the useful resources for programming.
+        Useful resources for programming
         <br />
         <span style={headingAccentStyles}>— This is a Gatsby site! 🎉🎉🎉</span>
       </h1>
@@ -159,6 +159,24 @@ const IndexPage: React.FC<PageProps> = () => {
             </a>
           </li>
         ))}
+      </ul>
+      <h2>Code Editors</h2>
+      <ul style={listStyles}>
+        <li>
+          <span>
+            <a style={linkStyle} href="https://cursor.com">Cursor AI code editor</a>
+            <p style={descriptionStyle}>Built to make you extraordinary productive, Cursor is the best way to code with AI.</p>
+            </span>
+        </li>
+      </ul>
+      <h2>Testing</h2>
+      <ul style={listStyles}>
+        <li>
+          <span>
+            <a style={linkStyle} href="https://playwright.dev">Playwright</a>
+          </span>
+          <p style={descriptionStyle}>Playwright enables reliable end-to-end testing for modern web apps.</p>
+        </li>
       </ul>
       <ul style={listStyles}>
         {links.map(link => (
